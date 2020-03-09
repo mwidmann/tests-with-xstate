@@ -1,18 +1,15 @@
 <template>
   <div id="app" ref="videPlayer">
-    <VideoPlayerCA />
     <VideoPlayer />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import VideoPlayerCA from './components/VideoPlayerCA.vue'
 import VideoPlayer from './components/VideoPlayer.vue'
 
 @Component({
   components: {
-    VideoPlayerCA,
     VideoPlayer,
   },
 })

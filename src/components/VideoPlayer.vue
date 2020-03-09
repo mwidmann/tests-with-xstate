@@ -1,6 +1,5 @@
 <template>
   <div class="container">
-    <h1>vue-property-decorator</h1>
     <video
       ref="videoPlayer"
       @canplay="send('LOADED', { video: $refs.videoPlayer })"
