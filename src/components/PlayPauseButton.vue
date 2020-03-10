@@ -1,9 +1,9 @@
 <template>
   <span>
-    <button v-if="isPlaying" @click="send('PAUSE')">
+    <button v-if="isPlaying" @click="send('PAUSE')" class="button">
       Pause
     </button>
-    <button v-else @click="send('PLAY')">
+    <button v-else @click="send('PLAY')" class="button">
       Play
     </button>
   </span>
@@ -30,10 +30,7 @@ export default class PlayPauseButton extends Vue {
 </script>
 
 <style>
-button {
-  background: #a8dba8;
-  padding: 0.25rem 0.5rem;
-  border: none;
-  cursor: pointer;
+.button {
+  @apply px-2 py-1 text-white bg-green-500;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="elapsed">
+  <div class="elapsed mb-2">
     <div class="elapsed-bar" :style="{ width: `${percentage}%` }"></div>
   </div>
 </template>
@@ -25,8 +25,7 @@ export default class ElapsedBar extends Vue {
   height: 5px;
 }
 .elapsed-bar {
-  transition: width 0.5 ease;
+  @apply transition-all duration-500 bg-green-500;
   height: 5px;
-  background-color: #629460;
 }
 </style>
